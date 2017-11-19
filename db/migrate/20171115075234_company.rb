@@ -1,7 +1,6 @@
 class Company < ActiveRecord::Migration[5.1]
   def change
     create_table :companies do |t|
-#      t.integer :id
       t.string  :name     ,:null => false
       t.string  :memo
       t.string  :address
