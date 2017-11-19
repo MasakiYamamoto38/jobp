@@ -255,3 +255,165 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:09:48 +0900
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 15ms
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1+)):
+  
+app/controllers/user_controller.rb:7:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:11:09 +0900
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+
+  
+ArgumentError (Unsupported argument type: 0...1 (Range)):
+  
+app/controllers/user_controller.rb:7:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:11:12 +0900
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (Unsupported argument type: 0...1 (Range)):
+  
+app/controllers/user_controller.rb:7:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:11:17 +0900
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+
+  
+ArgumentError (Unsupported argument type: 0..1 (Range)):
+  
+app/controllers/user_controller.rb:7:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:11:22 +0900
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+
+  
+ArgumentError (Unsupported argument type: 0 (Fixnum)):
+  
+app/controllers/user_controller.rb:7:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:11:24 +0900
+Processing by UserController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+ArgumentError (Unsupported argument type: 0 (Fixnum)):
+  
+app/controllers/user_controller.rb:7:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:13:21 +0900
+Processing by UserController#index as HTML
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE (id = not NULL)[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.4ms)
+
+
+  
+NoMethodError (undefined method `com_id' for nil:NilClass):
+  
+app/controllers/user_controller.rb:15:in `block (2 levels) in index'
+app/controllers/user_controller.rb:14:in `block in index'
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:16:47 +0900
+Processing by UserController#index as HTML
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE (id = not NULL)[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `com_id' for nil:NilClass):
+  
+app/controllers/user_controller.rb:15:in `block (2 levels) in index'
+app/controllers/user_controller.rb:14:in `block in index'
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:16:49 +0900
+Processing by UserController#index as HTML
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE (id = not NULL)[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `com_id' for nil:NilClass):
+  
+app/controllers/user_controller.rb:15:in `block (2 levels) in index'
+app/controllers/user_controller.rb:14:in `block in index'
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:16:51 +0900
+Processing by UserController#index as HTML
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE (id = not NULL)[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `com_id' for nil:NilClass):
+  
+app/controllers/user_controller.rb:15:in `block (2 levels) in index'
+app/controllers/user_controller.rb:14:in `block in index'
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:16:52 +0900
+Processing by UserController#index as HTML
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE (id = not NULL)[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `com_id' for nil:NilClass):
+  
+app/controllers/user_controller.rb:15:in `block (2 levels) in index'
+app/controllers/user_controller.rb:14:in `block in index'
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:16:56 +0900
+Processing by UserController#index as HTML
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE (id = not NULL)[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `com_id' for nil:NilClass):
+  
+app/controllers/user_controller.rb:15:in `block (2 levels) in index'
+app/controllers/user_controller.rb:14:in `block in index'
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:18:13 +0900
+Processing by UserController#index as HTML
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE (id = not NULL)[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/user_controller.rb:15:in `block (2 levels) in index'
+app/controllers/user_controller.rb:14:in `block in index'
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:18:16 +0900
+Processing by UserController#index as HTML
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE (id = not NULL)[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/user_controller.rb:15:in `block (2 levels) in index'
+app/controllers/user_controller.rb:14:in `block in index'
+app/controllers/user_controller.rb:10:in `index'
+Started GET "/user/index" for 127.0.0.1 at 2017-11-16 11:18:18 +0900
+Processing by UserController#index as HTML
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies" WHERE (id = not NULL)[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/user_controller.rb:15:in `block (2 levels) in index'
+app/controllers/user_controller.rb:14:in `block in index'
+app/controllers/user_controller.rb:10:in `index'

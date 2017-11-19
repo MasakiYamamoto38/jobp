@@ -4,20 +4,22 @@ class UserController < ApplicationController
   #hitorys[企業id][任意の番号]で進捗データの取得ができる
   #coms[企業id]の中に必要な情報が全て入っている
 
-    @coms = Company.find_by()
-    #ここは間違ってると思う
-    @historys = Array.new(@coms.length)#あともう一次元作る
+    @coms = Company.where("id = not ?", nil)
+    @historys = Array.new(@coms.length)
+
     for i in 0..@coms.length
-      @com = @coms(i)
-      @history_buf = Progress.find_by(com_id:i)#１社ごと複数の
-      @historys[i] = Array.new(history_buf.length)
-      #historysの２次元目に値を入れ込む
-      for j in 0..history_buf.length
-        @historys[i][j] = @history_buf[j]
+
+      #i = 企業idとなるように調べて代入
+      @com = nil
+      for j in  0..@coms.length
+        if @coms[j].id == i then
+          @com = @coms[j]
+        end
       end
 
-    end
-
+      @progs = Progress.find_by(com_id:@com.id)#この会社に対する進捗を取得
+      @historys[i] = @progs#Array.new(@progs.length)
+    end#この
   end
 
   def addcom

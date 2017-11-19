@@ -17,4 +17,5 @@
 @com.zoom = 19
 @com.url1 = 'http://www.livesense.co.jp/'
 @com.url2 = ''
+#企業情報を保存する
 @com.save
