@@ -1,13 +1,8 @@
 require 'test_helper'
 
 class UserControllerTest < ActionDispatch::IntegrationTest
-  test "should get index" do
-    get user_index_url
-    assert_response :success
-  end
-
-  test "should get addcom" do
-    get user_addcom_url
+  test "should get addprogress" do
+    get user_addprogress_url
     assert_response :success
   end
 

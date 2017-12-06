@@ -1,0 +1,161 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Static version of css will use Glyphicons sprites by default
+  =require twitter-bootstrap-static/sprites
+*/
+
+body{
+    margin: 15px;
+    /*background: #b0c4de;*/
+}
+.cmp_itm{
+    margin: 15px 0px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    background: #f0f8ff;
+    border-radius: 5px;
+}
+#header_bar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #4682b4;
+    z-index: 2;
+    color: #FFFFFF;
+}
+.com_text{
+    font-size: 175%;
+}
+.addcom{
+    background-color: #4682b4;
+    color: #FFFFFF;
+    /*margin-left: 15px;*/
+}
+.delete_lnk{
+    margin-left:10px;
+    padding-top: 0px;
+    margin-top:0px;
+}
+.ctn_btns{
+    margin-top: 20px;
+    padding-top: 70px;
+}
+.com_content{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.com_content_title{
+    margin-top:10px;
+    font-size: 125%;
+}
+
+
+
+
+
+
+
+/* ここからはステッププログレスばーのCSS */
+.progressbar {
+    margin: 0;
+    padding: 0;
+    counter-reset: step;
+    z-index: 0;
+    position: relative;
+}
+.progressbar li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #aaa;
+}
+.progressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: #eee;
+}
+.progressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #eee;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+.progressbar li:first-child:after {
+    content: none;
+}
+.progressbar li.active {
+    color: green;
+}
+.progressbar li.active:before {
+    background-color: #55b776;
+    color:#fff;
+}
+.progressbar li.active + li:after {
+    background-color: #55b776;
+}
+
+/* パターン2 */
+.progressbar_02 {
+    margin: 0;
+    padding: 0;
+    counter-reset: step;
+}
+.progressbar_02 li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progressbar_02 li:before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 26px;
+    border: 2px solid #aaa;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-right: 10px;
+}
+.progressbar_02 li:first-child:after {
+    content: none;
+}
+.progressbar_02 li.active {
+    color: green;
+    font-weight: bold;
+}
+.progressbar_02 li.active:before {
+    background-color: #55b776;
+    color:#fff;
+    border-color:green;
+}
+.progressbar_02 li.active + li:after {
+    background-color: #55b776;
+}

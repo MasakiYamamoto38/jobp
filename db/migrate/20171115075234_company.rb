@@ -9,6 +9,7 @@ class Company < ActiveRecord::Migration[5.1]
       t.integer :zoom
       t.string  :url1
       t.string  :url2
+      t.timestamps
     end
   end
 end

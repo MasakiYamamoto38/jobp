@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 20171115081719) do
     t.integer "zoom"
     t.string "url1"
     t.string "url2"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "progress_types", force: :cascade do |t|
@@ -28,11 +30,11 @@ ActiveRecord::Schema.define(version: 20171115081719) do
   end
 
   create_table "progresses", force: :cascade do |t|
-    t.integer "com_id", null: false
-    t.integer "type", null: false
+    t.integer "company_id", null: false
     t.string "name"
-    t.integer "history_num", null: false
     t.boolean "is_compleate", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

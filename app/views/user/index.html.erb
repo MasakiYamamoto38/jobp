@@ -1,23 +1,40 @@
-<h1>UserPag</h1>
+<h2>企業一覧</h2>
+
+<div class="container">
+  <div class="row">
+    <% @coms.each do |d|%>
+        <div class="col-md-6">
+          <div class="cmp_itm">
+
+            <span class="com_text"><%= d.name %></span>
+            <%= link_to '削除', 'user/delete' , class:"delete_lnk" %><br>
+
+            <!--メモ-->
+            <div class="com_content"><%= d.memo %></div>
+            <!--リンク-->
+            <div class="com_content">
+              <%= link_to d.url1 %><br>
+              <%= link_to d.url2 %><br>
+            </div>
+            <!--経過-->
+            <ul class="progressbar">
+              <li class="active">スタート</li>
+              <% d.progresses.each do |prg| %>
+                <li class="active"><%= prg.name %><br>(<%= prg.created_at.strftime("%m月%d日") %>)</li>
+              <% end %>
+              <li class="">お内定</li>
+            </ul>
+            <!--ボタン群-->
+            <div class="ctn_btns">
+              <%= link_to '詳細を表示', './' , class:'btn btn-default'  %>
+              <%= link_to '新しい経過を追加', '/user/addprogress?com_id=' + d.id.to_s , class:'btn btn-default'  %>
+            </div>
+          </div>
+
+        </div>
+    <% end %>
+  </div>
+  <%= link_to '新しい会社を追加', './addcom' , class:"btn btn-default addcom" %>
+</div>
 
 
-<h2>企業リスト</h2>
-<p>
-  企業ごとの進捗を確認します。
-</p>
-
-
-<% @coms.each do |d| %>
-  <p>
-    ----------<br>
-    会社名：<%= d.name %><br>
-    メモ　：<%= d.memo %><br>
-    URL1 ：<%= d.url1 %><br>
-    URL2 ：<%= d.url2 %><br>
-    <%= link_to '削除', './' %>
-    <%= link_to '経過を追加', './' %>
-    <%= link_to '新しい会社', './' %>
-    <br>
-    ----------<br>
-  </p>
-<% end %>

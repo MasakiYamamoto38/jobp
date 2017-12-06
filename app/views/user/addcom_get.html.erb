@@ -1,0 +1,16 @@
+<h1>会社を追加する</h1>
+<p>Find me in app/views/user/addcom.html.erb</p>
+
+<%= form_for Company.new,url:'/user/addcom' do |f| %>
+  会社名<br>
+  <%= f.text_field :name  %>
+  メモ<br>
+  <%= f.text_field :memo  %>
+  住所<br>
+  <%= f.text_field :address  %>
+  URL1<br>
+  <%= f.text_field :url1  %>
+  URL2<br>
+  <%= f.text_field :url2 %>
+  <%= f.submit %>
+<% end %>
