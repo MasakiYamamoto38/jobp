@@ -7,7 +7,7 @@
           <div class="cmp_itm">
 
             <span class="com_text"><%= d.name %></span>
-            <%= link_to '削除', 'user/delete' , class:"delete_lnk" %><br>
+            <%= link_to '削除', '/user/deletecom/' + d.id.to_s , class:"delete_lnk" , data: {confirm: "本当に削除しますか？"} %><br>
 
             <!--メモ-->
             <div class="com_content"><%= d.memo %></div>
@@ -20,13 +20,13 @@
             <ul class="progressbar">
               <li class="active">スタート</li>
               <% d.progresses.each do |prg| %>
-                <li class="active"><%= prg.name %><br>(<%= prg.created_at.strftime("%m月%d日") %>)</li>
+                <li <%= prg.is_compleate ? 'class=active' : '' %> ><%= prg.name %><br>(<%= prg.created_at.strftime("%m月%d日") %>)</li>
               <% end %>
               <li class="">お内定</li>
             </ul>
             <!--ボタン群-->
             <div class="ctn_btns">
-              <%= link_to '詳細を表示', './' , class:'btn btn-default'  %>
+              <%#= link_to '詳細を表示', './' , class:'btn btn-default'  %>
               <%= link_to '新しい経過を追加', '/user/addprogress?com_id=' + d.id.to_s , class:'btn btn-default'  %>
             </div>
           </div>

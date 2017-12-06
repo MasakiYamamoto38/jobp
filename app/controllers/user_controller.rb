@@ -61,4 +61,12 @@ class UserController < ApplicationController
     redirect_to '/user/index'
 
   end
+
+  def deletecom
+    com = Company.find(params[:id])
+    com.destroy!
+
+    redirect_to '/user/index'
+  end
+
 end

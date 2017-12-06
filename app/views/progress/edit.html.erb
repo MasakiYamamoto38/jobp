@@ -1,0 +1,9 @@
+<h1>Progress#edit</h1>
+<p>Find me in app/views/progress/edit.html.erb</p>
+
+
+<%= form_for @prg,url:"/progress/edit/#{@prg.id}",method: :post do |f| %>
+    <%= f.text_field :name  %>
+    <%= f.check_box :is_compleate %>
+    <%= f.submit class:"btn btn-default" %>
+<% end %>

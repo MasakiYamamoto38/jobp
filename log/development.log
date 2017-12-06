@@ -4573,3 +4573,1098 @@ Processing by UserController#index as HTML
 Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/user/" for 127.0.0.1 at 2017-12-06 20:14:21 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:14:27 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 86ms (Views: 82.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user/" for 127.0.0.1 at 2017-12-06 20:14:29 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:14:31 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/" for 127.0.0.1 at 2017-12-06 20:14:33 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:14:38 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.4ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 36ms (Views: 32.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user/user/delete" for 127.0.0.1 at 2017-12-06 20:14:43 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user/user/delete"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:16:33 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 70ms (Views: 65.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/user/user/delete" for 127.0.0.1 at 2017-12-06 20:16:36 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user/user/delete"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/user/user/delete" for 127.0.0.1 at 2017-12-06 20:16:59 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user/user/delete"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/user/user/delete" for 127.0.0.1 at 2017-12-06 20:17:03 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user/user/delete"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/user/user/delete" for 127.0.0.1 at 2017-12-06 20:17:18 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user/user/delete"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:17:22 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 50ms (Views: 46.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/deletecom" for 127.0.0.1 at 2017-12-06 20:17:23 +0900
+Processing by UserController#deletecom as HTML
+Completed 406 Not Acceptable in 143ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UserController#deletecom is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/user/deletecom" for 127.0.0.1 at 2017-12-06 20:18:07 +0900
+Processing by UserController#deletecom as HTML
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 2ms
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:18:07 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 76ms (Views: 69.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/user/deletecom" for 127.0.0.1 at 2017-12-06 20:18:10 +0900
+Processing by UserController#deletecom as HTML
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:18:10 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 41ms (Views: 36.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user/deletecom" for 127.0.0.1 at 2017-12-06 20:18:11 +0900
+Processing by UserController#deletecom as HTML
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:18:11 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user/deletecom" for 127.0.0.1 at 2017-12-06 20:18:12 +0900
+Processing by UserController#deletecom as HTML
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:18:12 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.5ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 50ms (Views: 46.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/user/deletecom" for 127.0.0.1 at 2017-12-06 20:18:12 +0900
+Processing by UserController#deletecom as HTML
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:18:12 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 46ms (Views: 42.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/deletecom" for 127.0.0.1 at 2017-12-06 20:18:12 +0900
+Processing by UserController#deletecom as HTML
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:18:12 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 45ms (Views: 41.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/deletecom" for 127.0.0.1 at 2017-12-06 20:18:13 +0900
+Processing by UserController#deletecom as HTML
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:18:13 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:24:00 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 71ms (Views: 66.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:25:34 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 72ms (Views: 65.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/user/addcom" for 127.0.0.1 at 2017-12-06 20:25:35 +0900
+Processing by UserController#addcom_get as HTML
+  Rendering user/addcom_get.html.erb within layouts/application
+  Rendered user/addcom_get.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/addcom" for 127.0.0.1 at 2017-12-06 20:25:44 +0900
+Processing by UserController#addcom_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1Dsumyo8nktgDWXl8BkPragi78u9dcgV3CwWjj6CTPtR6+2toOqFs9pho2XPyPgexWFp6jOe9jIz126o2hWA3Q==", "company"=>{"name"=>"aaa", "memo"=>"aa", "address"=>"aaa", "url1"=>"aaa", "url2"=>"aaaa"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "companies" ("name", "memo", "address", "url1", "url2", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "aaa"], ["memo", "aa"], ["address", "aaa"], ["url1", "aaa"], ["url2", "aaaa"], ["created_at", "2017-12-06 11:25:44.591860"], ["updated_at", "2017-12-06 11:25:44.591860"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:25:44 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 3]]
+  Rendered user/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/deletecom/3" for 127.0.0.1 at 2017-12-06 20:25:49 +0900
+Processing by UserController#deletecom as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 3]]
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "companies" WHERE "companies"."id" = ?[0m  [["id", 3]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 8ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:25:49 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user/addcom" for 127.0.0.1 at 2017-12-06 20:28:46 +0900
+Processing by UserController#addcom_get as HTML
+  Rendering user/addcom_get.html.erb within layouts/application
+  Rendered user/addcom_get.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 44ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/addcom" for 127.0.0.1 at 2017-12-06 20:28:53 +0900
+Processing by UserController#addcom_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9sN2yvuLuj3pNw3z3g+rEfbXeC5oLr1o0QK5WvZ6mHRzE7X8cV2hxVNby3Ph3lyim5T+D+bFg08++cF8Eu1UUg==", "company"=>{"name"=>"aaa", "memo"=>"aa", "address"=>"aaa", "url1"=>"aaa", "url2"=>"aaaa"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "companies" ("name", "memo", "address", "url1", "url2", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "aaa"], ["memo", "aa"], ["address", "aaa"], ["url1", "aaa"], ["url2", "aaaa"], ["created_at", "2017-12-06 11:28:53.721426"], ["updated_at", "2017-12-06 11:28:53.721426"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:28:53 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 4]]
+  Rendered user/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/user/deletecom/4" for 127.0.0.1 at 2017-12-06 20:29:00 +0900
+Processing by UserController#deletecom as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 4]]
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "companies" WHERE "companies"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:29:00 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  Rendered user/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/addcom" for 127.0.0.1 at 2017-12-06 20:29:21 +0900
+Processing by UserController#addcom_get as HTML
+  Rendering user/addcom_get.html.erb within layouts/application
+  Rendered user/addcom_get.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user/addcom" for 127.0.0.1 at 2017-12-06 20:29:30 +0900
+Processing by UserController#addcom_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i2fkpvPZpzMDfJAai+TIOlO03LV/i7jmwIkP0yFv94sOtyeQeQ+8y7kQVpq0NT+JPvdalPFghsEvcnf1xfg7rQ==", "company"=>{"name"=>"aaa", "memo"=>"aaa", "address"=>"aaa", "url1"=>"aaa", "url2"=>"aaaa"}, "commit"=>"Create Company"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "companies" ("name", "memo", "address", "url1", "url2", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "aaa"], ["memo", "aaa"], ["address", "aaa"], ["url1", "aaa"], ["url2", "aaaa"], ["created_at", "2017-12-06 11:29:30.173259"], ["updated_at", "2017-12-06 11:29:30.173259"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:29:30 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 47ms (Views: 43.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:51:11 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 191ms (Views: 186.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/progress/edit/2" for 127.0.0.1 at 2017-12-06 20:51:31 +0900
+Processing by ProgressController#edit as HTML
+  Parameters: {"prg_id"=>"2"}
+  [1m[36mProgress Load (0.3ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering progress/edit.html.erb within layouts/application
+  Rendered progress/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 43ms (Views: 38.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/progress/edit/progress/edit/2" for 127.0.0.1 at 2017-12-06 20:51:53 +0900
+  
+ActionController::RoutingError (No route matches [PATCH] "/progress/edit/progress/edit/2"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PATCH "/progress/edit/progress/edit/2" for 127.0.0.1 at 2017-12-06 20:52:45 +0900
+  
+ActionController::RoutingError (No route matches [PATCH] "/progress/edit/progress/edit/2"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/progress/edit/2" for 127.0.0.1 at 2017-12-06 20:52:47 +0900
+Processing by ProgressController#edit as HTML
+  Parameters: {"prg_id"=>"2"}
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering progress/edit.html.erb within layouts/application
+  Rendered progress/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/progress/edit/progress/edit/2" for 127.0.0.1 at 2017-12-06 20:52:52 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/progress/edit/progress/edit/2"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/progress/edit/2" for 127.0.0.1 at 2017-12-06 20:53:08 +0900
+Processing by ProgressController#edit as HTML
+  Parameters: {"prg_id"=>"2"}
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering progress/edit.html.erb within layouts/application
+  Rendered progress/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 46ms (Views: 41.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/progress/edit/2" for 127.0.0.1 at 2017-12-06 20:53:11 +0900
+Processing by ProgressController#edit as HTML
+  Parameters: {"prg_id"=>"2"}
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering progress/edit.html.erb within layouts/application
+  Rendered progress/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/progress/edit/2" for 127.0.0.1 at 2017-12-06 20:53:17 +0900
+Processing by ProgressController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hqB+N4gA1D1j7kRdTkrwppG0ma+HDd4KGFJhw/hORA5AAIi4mdID5ykry8AboMZYwZGuaVM8pFc7XxN7555E/g==", "progress"=>{"name"=>"社長面接", "is_compleate"=>"1"}, "commit"=>"Update Progress", "prg_id"=>"2"}
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 20:53:17 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:00:20 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 72ms (Views: 67.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/progress/edit/2" for 127.0.0.1 at 2017-12-06 21:00:30 +0900
+Processing by ProgressController#edit as HTML
+  Parameters: {"prg_id"=>"2"}
+  [1m[36mProgress Load (1.1ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering progress/edit.html.erb within layouts/application
+  Rendered progress/edit.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 39ms (Views: 34.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/progress/edit/2" for 127.0.0.1 at 2017-12-06 21:00:40 +0900
+Processing by ProgressController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+P1GZgijuNuIvMY9hpYzRdHDxxKlxMnT3Utfp6qKLk5QwOWifBZOSTnfIWj8G4zR2I42p6maXpseF/GgXooSQ==", "progress"=>{"name"=>"社長面接", "is_compleate"=>"1"}, "commit"=>"Update Progress", "prg_id"=>"2"}
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCompany Load (0.6ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "progresses" SET "name" = ?, "updated_at" = ? WHERE "progresses"."id" = ?[0m  [["name", "社長面接"], ["updated_at", "2017-12-06 12:00:40.745776"], ["id", 2]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 12ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:00:40 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.8ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:04:02 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.1ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  Rendered user/index.html.erb within layouts/application (279.0ms)
+Completed 500 Internal Server Error in 291ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `prog' for #<#<Class:0x007f8a0dbb6018>:0x007f8a0dbb4100>
+Did you mean?  prg
+               proc):
+    20:             <ul class="progressbar">
+    21:               <li class="active">スタート</li>
+    22:               <% d.progresses.each do |prg| %>
+    23:                 <li <%=prog.is_active ? 'class="active"': ''%> ><%= prg.name %><br>(<%= prg.created_at.strftime("%m月%d日") %>)</li>
+    24:               <% end %>
+    25:               <li class="">お内定</li>
+    26:             </ul>
+  
+app/views/user/index.html.erb:23:in `block (2 levels) in _app_views_user_index_html_erb__2937173997194036254_70115456300300'
+app/views/user/index.html.erb:22:in `block in _app_views_user_index_html_erb__2937173997194036254_70115456300300'
+app/views/user/index.html.erb:5:in `_app_views_user_index_html_erb__2937173997194036254_70115456300300'
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:04:17 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.4ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  Rendered user/index.html.erb within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_active' for #<Progress:0x007f8a04f87290>):
+    20:             <ul class="progressbar">
+    21:               <li class="active">スタート</li>
+    22:               <% d.progresses.each do |prg| %>
+    23:                 <li <%=prg.is_active ? 'class="active"': ''%> ><%= prg.name %><br>(<%= prg.created_at.strftime("%m月%d日") %>)</li>
+    24:               <% end %>
+    25:               <li class="">お内定</li>
+    26:             </ul>
+  
+app/views/user/index.html.erb:23:in `block (2 levels) in _app_views_user_index_html_erb__2937173997194036254_70115443249180'
+app/views/user/index.html.erb:22:in `block in _app_views_user_index_html_erb__2937173997194036254_70115443249180'
+app/views/user/index.html.erb:5:in `_app_views_user_index_html_erb__2937173997194036254_70115443249180'
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:04:30 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.3ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  Rendered user/index.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_complete' for #<Progress:0x007f8a05a8bce0>
+Did you mean?  is_compleate
+               is_compleate?
+               is_compleate=):
+    20:             <ul class="progressbar">
+    21:               <li class="active">スタート</li>
+    22:               <% d.progresses.each do |prg| %>
+    23:                 <li <%=prg.is_complete ? 'class="active"': ''%> ><%= prg.name %><br>(<%= prg.created_at.strftime("%m月%d日") %>)</li>
+    24:               <% end %>
+    25:               <li class="">お内定</li>
+    26:             </ul>
+  
+app/views/user/index.html.erb:23:in `block (2 levels) in _app_views_user_index_html_erb__2937173997194036254_70115417058760'
+app/views/user/index.html.erb:22:in `block in _app_views_user_index_html_erb__2937173997194036254_70115417058760'
+app/views/user/index.html.erb:5:in `_app_views_user_index_html_erb__2937173997194036254_70115417058760'
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:04:42 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/progress/edit/2" for 127.0.0.1 at 2017-12-06 21:05:20 +0900
+Processing by ProgressController#edit as HTML
+  Parameters: {"prg_id"=>"2"}
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering progress/edit.html.erb within layouts/application
+  Rendered progress/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 45ms (Views: 40.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/progress/edit/1" for 127.0.0.1 at 2017-12-06 21:05:42 +0900
+Processing by ProgressController#edit as HTML
+  Parameters: {"prg_id"=>"1"}
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering progress/edit.html.erb within layouts/application
+  Rendered progress/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/progress/edit/1" for 127.0.0.1 at 2017-12-06 21:06:18 +0900
+Processing by ProgressController#edit as HTML
+  Parameters: {"prg_id"=>"1"}
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering progress/edit.html.erb within layouts/application
+  Rendered progress/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:06:33 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:07:47 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.4ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:08:21 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 53ms (Views: 48.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:08:45 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 48ms (Views: 44.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:08:47 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:08:59 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/progress/edit/2" for 127.0.0.1 at 2017-12-06 21:09:09 +0900
+Processing by ProgressController#edit as HTML
+  Parameters: {"prg_id"=>"2"}
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering progress/edit.html.erb within layouts/application
+  Rendered progress/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/progress/edit/3" for 127.0.0.1 at 2017-12-06 21:09:13 +0900
+Processing by ProgressController#edit as HTML
+  Parameters: {"prg_id"=>"3"}
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Progress with 'id'=3):
+  
+app/controllers/progress_controller.rb:4:in `edit'
+Started GET "/progress/edit/2" for 127.0.0.1 at 2017-12-06 21:09:18 +0900
+Processing by ProgressController#edit as HTML
+  Parameters: {"prg_id"=>"2"}
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering progress/edit.html.erb within layouts/application
+  Rendered progress/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/progress/edit/2" for 127.0.0.1 at 2017-12-06 21:09:20 +0900
+Processing by ProgressController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5NEpnzvlNLijUCPX9xdWOJiRX8EPoHFHv3GAFSQfq30icd8QKjfjYumVrEqi/WDGyLRoB9uRCxqcfPKtO8+rjQ==", "progress"=>{"name"=>"社長面接", "is_compleate"=>"1"}, "commit"=>"Update Progress", "prg_id"=>"2"}
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:09:20 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.5ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 47ms (Views: 43.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/progress/edit/2" for 127.0.0.1 at 2017-12-06 21:09:30 +0900
+Processing by ProgressController#edit as HTML
+  Parameters: {"prg_id"=>"2"}
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering progress/edit.html.erb within layouts/application
+  Rendered progress/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 37ms (Views: 31.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/progress/edit/2" for 127.0.0.1 at 2017-12-06 21:09:33 +0900
+Processing by ProgressController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fho4w4ievyvJ6i0pdj94BXB95JwZg0mnlmeQOvWDnELQus5MmUxo8YMvorQj1U77IFjTWs2yM/q1auKC6lOcsg==", "progress"=>{"name"=>"社長面接", "is_compleate"=>"0"}, "commit"=>"Update Progress", "prg_id"=>"2"}
+  [1m[36mProgress Load (0.2ms)[0m  [1m[34mSELECT  "progresses".* FROM "progresses" WHERE "progresses"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "progresses" SET "is_compleate" = ?, "updated_at" = ? WHERE "progresses"."id" = ?[0m  [["is_compleate", "f"], ["updated_at", "2017-12-06 12:09:33.380317"], ["id", 2]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/user/index
+Completed 302 Found in 11ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/user/index" for 127.0.0.1 at 2017-12-06 21:09:33 +0900
+Processing by UserController#index as HTML
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mCompany Load (0.2ms)[0m  [1m[34mSELECT "companies".* FROM "companies"[0m
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 1]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 2]]
+  [1m[36mProgress Load (0.1ms)[0m  [1m[34mSELECT "progresses".* FROM "progresses" WHERE "progresses"."company_id" = ?[0m  [["company_id", 5]]
+  Rendered user/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.5ms)
+
+
